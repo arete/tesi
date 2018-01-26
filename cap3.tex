@@ -1,0 +1,446 @@
+\chapter{IL tracciamento nelle ECC}
+
+\section{Le emulsioni nucleari}
+
+Le emulsioni nucleari sono  un  rivelatore di particelle con una straordinaria risoluzione
+ risoluzione spaziale  ($<1$ $\mu m$). Il loro utilizzo ha 
+consentito di conseguire importanti  scoperte nel campo della fisica nucleare e delle particelle
+elementari \cite{pione,beauty}. Tuttavia a causa  della grande lentezza e laboriosit\`{a} con
+della scansione, le emulsioni furono utilizzate sempre meno. Con l' avvento
+delle moderne e sofisticate tecniche di scansione automatica, sviluppate negli anni '80 ed per prime applicate con successo nell' esperimento CHORUS \cite{A29}, la tecnica delle emulsioni
+ha conosciuto una vera e propria rinascita, determinandone cos\`{i}
+l'applicazione su vasta scala come nell'esperimento OPERA.
+
+Le emulsioni nucleari sono costituite da microcristalli di bromuro di
+argento (AgBr) dispersi in uno strato gelatinoso di sostegno. Le
+dimensioni dei microcristalli sono pari a circa $0.2$ $\mu m$ e la loro concentrazione in emulsione varia dal dal $25\%$ al $50\%$ in volume. La loro
+realizzazione \`{e} accuratamente controllata grazie alla moderna tecnologia
+industriale  sviluppata nel contesto dell'esperimento OPERA.
+
+Le emulsioni presentano caratteristiche analoghe a quelle delle pellicole
+fotografiche, ma con le seguenti differenze:
+
+\begin{itemize}
+\item  hanno uno spessore maggiore (da $50$ $\mu m$ a $\sim 1$ $mm$ rispetto
+ai $5\div 10$ $\mu m$ delle pellicole);
+
+\item  il loro contenuto di AgBr \`{e} superiore di un ordine di grandezza;
+
+\item  i granuli di argento sviluppati hanno un diametro minore e risultano
+pi\`{u} uniformi.
+\end{itemize}
+
+L'energia rilasciata dal passaggio di una particella carica o di un fotone
+attraverso un'emulsione determina dei piccoli depositi di Ag metallico
+principalmente sulla superficie del cristallo di AgBr coinvolto nel processo
+(\emph{immagine latente}). L'interazione del campo elettrico della particella incidente con gli elettroni atomici o, nel caso dei fotoni, l'effetto fotoelettrico o Compton
+provoca la ionizzazione di un cristallo di AgBr, creando atomi neutri di Br
+e lacune positive $Ag^{+}$ e liberando elettroni che si portano in banda di
+conduzione. Gli elettroni diffondono attraverso il cristallo finch\'{e} non
+sono catturati da \emph{trappole}, presenti come imperfezioni del reticolo,
+che acquistano carica negativa. Le trappole, ovvero impurit\`{a} aggiunte in
+fase di produzione come agenti di sensibilizzazione, generano un campo
+elettrico all'interno del cristallo e fungono da centri di cattura degli
+ioni $Ag^{+}$ che, sotto l'influenza delle forze di Van der Waals, vengono
+intrappolati e neutralizzati, trasformandosi in atomi di argento. 
+In questo modo si formano aggregati di atomi di Ag (ossia {\emph{ immagini latenti}})
+che agiscono da centri di sviluppo.
+
+Le immagini latenti sono rese stabili da un complesso procedimento
+fisico-chimico, che prende il nome di \emph{sviluppo}: introducendo
+l'emulsione in una soluzione contenente agenti riducenti (principalmente
+amidolo), altro argento viene indotto ad accumularsi attorno
+all'Ag che ha dato luogo all'immagine latente; di conseguenza, il deposito
+iniziale cresce fino alla creazione di \emph{grani scuri} disposti lungo la
+traiettoria della particella.  La probabilit\`{a} che
+questo processo si verifichi in cristalli che non hanno interagito con la
+particella ionizzante \`{e} estremamente bassa. Tuttavia, un'alta
+concentrazione di impurit\`{a} pu\`{o} dar luogo alla formazione di granuli
+sparsi (che costituiscono un fondo ineliminabile) in genere dell'ordine di
+qualche grano per $1000$ $\mu m^{3}$ di emulsione. I cristalli di AgBr non ridotti vengono disciolti mediante un bagno di fissaggio e, infine, lavati via dall'emulsione.
+
+Le emulsioni nucleari forniscono un'immagine tridimensionale delle tracce,
+che appaiono come sequenze di grani scuri, la cui posizione pu\`{o} essere
+misurata con precisione sub-micrometrica. Da qui l'elevata
+risoluzione spaziale di tali rivelatori.
+
+
+
+\section{L'analisi delle emulsioni}
+
+L'immagine tridimensionale immagazzinata nelle emulsioni viene acquisita
+mediante un microscopio dotato di una telecamera CCD o CMOS e successivamente digitalizzata.
+Algoritmi software gestiscono il riconoscimento dei grani, nonch\'{e} la
+ricostruzione e la misura dei parametri delle tracce. Nel seguito descriviamo i principi di funzionamento di
+dei sistemi discansione automatici sviluppati in Giappone e in Europa.
+
+
+\subsection{Il sistema TS}
+A partire dagli anni '80 \'{e} stato sviluppato in Giappone 
+il sistema automatico  denominato \emph{Track Selector} (fig.\ref{fig:ts}). L'emulsione da analizzare \`{e} posizionata sul piatto di un
+microscopio; essa viene ricoperta con campi del microscopio adiacenti
+tramite successivi movimenti orizzontali del piatto. Il sistema acquisisce, all'interno delle emulsioni, una serie di \emph{immagini
+tomografiche}, corrispondenti ad altrettanti livelli di messa a fuoco secondo la direzione verticale, su un
+numero limitato di campi intorno alla posizione della traccia prevista. Il Track Selector ricostruisce le traccie sovrapponendo le immagini  con uno spostamento dei diversi strati determinato in base all'angolo  della traccia predetta dai rivelatori elettronici, la procedura è detta di Scan Back. Se non si ricerca una determinata traccia, ma tutte le traccie in un determinato intervallo angolare questa procedura viene ripetuta per un numero di volte fino  a coprire l'intera accettanza angolare richiesta. Questa seconda tipologia di scansione, detta NetScan,  è stata introdotta alla fine degli anni '90  grazie all'utilizzo di tecniche di processamento parallelo e un sistema  denominato  {\bf{U}}ltra {\bf{T}}rack {\bf{S}}elector (UTS). Per ogni traccia misurati i parametri  angololari e le posizioni.
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=110mm,height=70mm]{./figure_cap2/TrackSelector.eps}
+\end{center}
+\caption{Principio di funzionamento del sistema Track Selector, sviluppato in Giappone.}
+\label{fig:ts}
+\end{figure}
+
+
+In tabella \ref{table:ts} sono riportat i progessi dei sistemi di scansione automatica di emulsione a partire dal TS alle sue successive evoluzioni.
+
+\begin{table}[tbp]
+\begin{tabular}{||c|c|c|c|c||}
+\hline\hline
+\textbf{Sistema} & \textbf{Anno} & \textbf{V. scansione}$^{(1)}$ & \textbf{
+V. scansione}$^{(2)}$ & \textbf{Esperimento} \\ \hline
+TS & 1982 & 0.2 & non provato & CERN WA75/FNAL E653 \\ \hline
+TS2 & 1994 & 0.4 & 0.008 & CHORUS \\ \hline
+NTS & 1996 & 3 & 0.25 & CHORUS \\ \hline
+UTS & 1998 & 3 & 3 & DONUT/CHORUS \\ \hline
+S-UTS & 2005 & 30 & 30 & OPERA/DONUT \\ \hline\hline
+\end{tabular}
+\caption[Sviluppo delle caratteristiche dei sistemi di scansione delle
+emulsioni nucleari.]{Sviluppo delle caratteristiche dei sistemi di scansione
+delle emulsioni nucleari. La velocit\`{a} di scansione \`{e} espressa in
+viste per secondo (una vista corrisponde ad un'area di $\sim 0.018$ $%
+mm^{2}=150$ $\protect\mu m\times 120$ $\protect\mu m$). La velocit\`{a} (1)
+si riferisce ad un angolo specifico, (2) a tutti gli angoli.}
+\label{table:ts} 
+\end{table}
+
+Il sistema \textbf{S}\emph{uper} \textbf{UTS} (\textbf{S-UTS}) rappresenta
+una ulteriore evoluzione del  Track Selector ed \`{e} stato
+progettato e realizzato dall'Universit\`{a} di Nagoya (Giappone) per
+raggiungere oltre $20~cm^2/h$ di velocit\'{a} di scansione necessari all'esperimento  OPERA. Il suo principio
+di funzionamento \`{e} illustrato in fig.\ref{fig:sts}. L'acquisizione delle
+immagini tomografiche dell'emulsione, con una telecamera CCD ad alte prestazioni (3KHz), avviene  senza interruzione del movimento dello stage grazie a un piezoelettrico che controlla il movimento verticale  dell'obiettivo sincronizzandolo con quello del tavolo. Ciascun campo di vista ($150\times 120$ $\mu m^{2}$) viene \emph{sezionato} in 16 livelli per la ricostruzione in 3D delle tracce. 
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=90mm,height=90mm]{./figure_cap2/S-UTS.eps}
+%\includegraphics{./figure_cap2/S-UTS.eps}
+\end{center}
+\caption{Principio di funzionamento del sistema S-UTS.}
+\label{fig:sts}
+\end{figure}
+
+
+\section{Il sistema ESS}
+Nei vari laboratori europei della collaborazione OPERA è stato sviluppato un sistema di scansione automatica, denominato ESS (European Scanning System), che utilizza per la ricostruzione delle traccie un approccio diverso dal TS. Tale approccio consiste nel realizzare una scansione tomografica dell'emulsione identificando tutti i grani di ciascun immagine: la ricostruzione della traccia, affidata ad un software dedicato, viene effettuata combinando grani appartenente a strati diversi. Tali combinazioni di grani definiscono traiettorie lungo le quali viene definito un volume di accettanza. Se il numero di grani all'interno di questo volume supera una soglia predefinita, la sequenza di grani costituisce una microtraccia. In tal modo ciascuna traccia viene ricostruita indipendentemente dal proprio angolo e  per questo motivo quest'approccio viene definito {\emph{multitraccia}}. 
+
+Lo sviluppo dell'ESS  è basato sull'utilizzo di componenti hardware commerciali (o realizzata in collaborazione con industrie) in modo da poter trarre profitto dai continui sviluppi tecnologici del settore.   Il software utilizzato per la ricostruzione delle traccie, sviluppato in ambiente object-oriented, è realizzato secondo una struttura modulare che fornisce una flessibilità tale da consentire successive modifiche hardware. La progettazione dell'ESS, tenendo conto dell'alta velocità di scansione e di accuratezza in posizione ed angolo adeguate per l'analisi degli eventi, si è basata sulle seguenti linee guida:
+
+\begin{itemize}
+\item{utilizzo di meccanica di movimentazione ad alte prestazioni con precisioni di posizionamento sub-micrometrica;}
+\item{ottica  con grande campo inquadrato;}
+\item{telecamera con sensore CMOS ad alta risoluzione e frame rate;}
+\item{potenti schede per il processamento delle immagini.}
+\end{itemize}
+
+In fig.\ref{fig:mic2} è mostrato il sistema (ESS) per l'analisi delle traccie in emulsione , mentre in figura \ref{fig:mic_schema} è riportato lo schema di principio. 
+
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=90mm,height=90mm]{./eps/mic2.eps}
+\end{center}
+\caption{Il sistema ESS}
+\label{fig:mic2}
+\end{figure}
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=130mm,height=90mm]{./eps/schmic.eps}
+\end{center}
+\caption{Schema generale del sistema di acquisizione}
+\label{fig:mic_schema}
+\end{figure}
+
+
+
+\subsection{La meccanica di movimentazione e le sue prestazioni}
+La meccanica per la movimentazione  è stata realizzata in collaborazione con la  MICOS\footnote{http://www.micos.com/}, un'azienda specializzata nella produzione di meccanica di precisione automatizzata. Nel sistema ESS vengono impiegati:
+
+
+
+\begin{itemize}
+\item{Un piatto  per il movimento orizzontale $(x,y)$ ;}
+\item{Una slitta per la movimentazione verticale del gruppo ottico(asse $z$);}
+\item{Un braccio di granito per il supporto della slitta dell'asse $z$ e del gruppo ottico;}
+\end{itemize}
+Il tutto è montato su di un banco ottico. Il movimento del piatto e del gruppo ottico è controllato da motori passo-passo  a cinque fasi. I motori trasmettono il movimento  mediante una vite micrometrica senza fine  collegata al relativo asse. Questa può essere collegata mediante una flangia al piano movibile o direttamente alla slitta. I motori passo passo vengono pilotati tramite impulsi forniti da unità specifiche di micro-passo e potenza. I motori possono muoversi a 500 passi/giro, corrispondenti a $0.72°/passo$. Le unità di micro-passo  possono moltiplicare il numero di passi per un fattore fino a 250. L'insieme delle unità di micropasso, dei motori e delle rispettive viti senza fine consente una velocità massima di $5cm~/s$ del piatto o della slitta. Allo scopo di mostrare quali sono le prestazioni del sistema motorizzato e per verificare che esse fossero rispondenti alle richieste sono state fatte delle misure del {\em{tempo di assestamento}}. Esso è il tempo necessario affinché il microscopio  cambi campo di vista attendendo anche   che le oscillazioni del piatto dopo l'arresto, siano contenute entro  $0.2~\mu m$.  In fig. \ref{fig:settx} è riportato l'istogramma dei valori del {\em{tempo di assestamento}} ottenuti con misure ripetute scegliendo opportuni parametri di accelerazione e decelerazione.
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=70mm,height=70mm]{./eps/Sett_timeX.eps}
+\includegraphics[width=70mm,height=70mm]{./eps/Sett_timeY.eps}
+\end{center}
+\caption{Misura del tempo di assestamento  per l'asse Y(a destra) e per l'asse Y(a sinistra) incluso il tempo di spostamento da un campo di vista al successivo.}
+\label{fig:settx}
+\end{figure}
+
+La differenza dei tempi di assestamento dei  due assi è  imputabile  ad una  maggiore inerzia dell'asse $Y$ e quindi un tempo di assestamento maggiore. La differenza di massa è dovuta al fatto che la movimentazione dell'asse $X$  poggia su quella dell'asse $Y$. 
+Il software di acquisizione tiene conto di un maggiore tempo di assestamento dell'asse $Y$. Infatti  quando effettua la scansione si muove  principalmente lungo l'asse $X$, limitando gli spostamenti lungo $Y$. La scansione infatti avviene su strisce che si sviluppano lungo l'asse X e gli spostamenti lungo Y sono limitati solo al cambio di striscia.
+
+La posizione del piatto e controllata mediante l'uso di tre encoder lineari di lettura con risoluzione di $0.1 ~\mu m$.
+La posizione del piatto viene rilevata dagli encoder istante per istante, durante il movimento. Ciò consente un continuo ricalcolo del numero di passi necessari per il raggiungimento del posizione, migliorando sensibilmente la precisione di posizionamento del sistema. 
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=140mm,height=90mm]{eps/Y_clust_pos_10_tracks.eps}
+\end{center}
+\caption{Misura della precisione di posizionamento per l'asse $Y$. }
+\label{fig:precisione}
+\end{figure}
+
+
+La fig. \ref{fig:precisione} rappresenta una misura di precisione di posizionamento dello stage del microscopio. I valori riportati  sono ottenuti realizzando una mappatura completa della superfice disponibile e sono calcolati sottraendola posizione effettivamente raggiunta e misurata dagli "encoder" di posizione al valore di ciascuna coordinata dell zona  analizzata. La movimentazione dell'apparato è controllata da una scheda di controllo motori. Questa scheda è prodotta dalla National Instruments\footnote{http://www.ni.com/} (mod. PCI7344), Essa è dotata di 4 canali per il pilotaggio di motori passo passo e la lettura degli encoders. La scheda è dotata di un Digital Signal Processor(DSP) che ne controlla tutte le funzioni. E' fornita di una libreria, {\bf{FLEX}}, compatibile con i linguaggi C e C++. L'utilizzo del DSP unito alla flessibilità della libreria permette di programmare e controllare le curve di accellerazione e decellerazione nella fase di posizionamento e di spostamento a velocità costante, senza l'intervento del computer principale, garantendo la velocità e precisione richiesta al sistema.
+
+La scheda di controllo motori è anche dotata di 4 DAC a 16 bit associati a canali di pilotaggio motori. Il DAC del quarto canale è utilizzato per il controllo dell'illuminazione del microscopio. Il controllo permette la regolazione dell'intensità luminosa in modo da ottimizzare le prestazioni dell'ottica e del sistema di acquisizione.
+
+\subsection{La telecamera e il gruppo ottico}
+Per consentire l'illuminazione dell'emulsione, sotto il piatto è montata una lampada (fig.\ref{fig:illu}), la cui intensità è controllabile via software. Un condensatore ottico regolabile in altezza e posizione permette di concentrare la luce all'interno dell'emulsione. Le regolazioni del condensatore permettono di allinearlo all'asse del gruppo ottico e concentrare la luce in modo da garantire  uniformità di illuminazione. Quest'ultima  è fondamentale per permettere un buon filtraggio dell'immagine. Per evitare che i movimenti del piano possano compromettere l'allineamento del condensatore con l'asse del gruppo ottico e per evitare  che il gruppo ottico danneggi il piano, i binari sono equipaggiati con degli interruttori di fine corsa.
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=70mm,height=70mm]{./eps/illu.eps}
+\end{center}
+\caption{Sistema di illuminazione.}
+\label{fig:illu}
+\end{figure}
+
+   
+
+
+Il microscopio è dotato di un obiettivo ad olio con una profondità focale di $0.55\mu m$ e un ingrandimento $50\times$. Le principali aberrazioni  sono corrette all'interno dell'obiettivo. Con la telecamera attualmente in uso si ottiene un campo inquadrato   di $ 394.5\times 315.6 ~\mu m^2$.
+
+
+La telecamera utilizzata  è il modello MC1310 della Mikrotron. Essa è dotata di un  sensore CMOS, con risoluzione $1280\times1024$ pixel. La dimensione lineare del singolo pixel è di $12\mu m$ la superficie totale inquadrata è di $395.5\times 315.6 \mu m^2$. La telecamera è in grado di acquisire immagini ad una frequenza massima di  500 frames/s, il che implica che un trasferimento dati di $660MB/s$. Il sistema ESS la utilizza ad una frequenza di $376$ frames/s, suffciente a garantire  le prestazioni di scansione richieste.
+
+
+Le immagini vengono  acquisite e processate mediante l'uso di una scheda MATROX Odyssey. La prima operazione effettuata è quella di eliminare  eventuali piccole impurità presenti sul sensore della telecamera, utilizzando un'immagine acquisita fuori emulsione e sottraendola alle immagini acquisite in emulsione. La seconda operazione è detta  filtraggio. Questa operazione ha lo scopo di aumentare il contrasto tra i grani messi a fuoco e le ombre dei grani che si trovano al di fuori del frame investigato. Il filtro è ottenuto applicando un matrice di  convoluzione. Il valore del pixel, dopo il filtraggio, è il risultato della somma pesata dei pixel adiacenti secondo l'equazione (\ref{eq:conv}).  
+\begin{equation}
+p(i,j)=\sum_{h=1}^{6}\sum_{k=1}^{6}K(h,k)\cdot g(i+h,j+k)
+\label{eq:conv}
+\end{equation}
+
+Gli studi effettuati hanno portato a utlizzare come  filtro  la seguente matrice $6\times 6$ \cite{ESSA}:
+
+\begin{equation}
+\nonumber K \; = \;\;
+\begin{array}{|c|c|c|c|c|c|}
+  \hline
+  1 &  1 &  1  &  1  & 1 & 1 \\ \hline
+  1 & 2 &  3  &  3  & 2 & 1 \\ \hline
+  \;1\; & \;3\; & -13 & -13 &\; 3 \;&\; 1 \; \\ \hline
+  1 & 3 & -13 & -13 & 3 & 1 \\ \hline
+  1 & 2 &  3  &  3  & 2 & 1 \\ \hline
+  1 & 1 &  1  &  1  & 1 & 1 \\ \hline
+\end{array}
+\end{equation}
+
+
+
+
+
+Dopo il filtraggio viene applicata una soglia  e l'immagine vine binarizzata: ai pixel con valore che superano la soglia viene assegnato il valore 1, 0 agli altri. L'ultima operazione effettuata dal processore del computer è l'individuazione dei cluster e della loro area. Le informazioni dei cluster sono utilizzate dal software di ricostruzione delle tracce.
+
+Per verificare il corretto allineamento dell'asse $Z$  si possono confrontare le distribuzioni angolari acquisite in due differenti scansioni: usando nella  prima una   regione di emulsione  e, nella seconda, la stessa regione ruotando il foglio di 180 gradi. Il disallinemamento viene misurato confrontando la differenza delle distribuzioni angolari  delle due scansioni per un determinato angolo.In fig.\ref{fig:zslant}  sono riportate le  distribuzioni angolari delle due scansioni, dalle quali si evince che la differenza angolare tra i due valori centrali \'{e} di circa $2~mrad$.
+
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=120mm,height=80mm]{eps/Zslant.eps}
+\end{center}
+\caption{Allineamento della telecamera e dell'asse Z}
+\label{fig:zslant}
+\end{figure}
+
+\subsection{Software di acquisizione}
+Il software di acquisizione on-line per la scansione automatica delle emulsioni e la ricostruzione dei segmenti delle tracce è stato sviluppato in ambiente C++. Esso è basato su una struttura modulare dove  ogni oggetto svolge un ben  definito compito. Per ogni oggetto è possibile controllare e variare i parametri. 
+Il  software gestisce sia la  movimentazione dei tre assi, che il processamento e la ricostruzione dei segmenti nell'area di emulsione analizzata. I dati relativi alla scansione vengono  salvati in files binari.
+
+E' importante misurare le quote di ingresso e uscita degli strati di emulsioni e della parte insensibile (base) del film. Il microscopio si muove lungo l'asse $Z$ e  misura il numero di cluster per campo a differenti  quote. La fine di uno strato di emulsione è definita quando il numero di clusters è minore di una determinata soglia. Dopo questa operazione vengono acquisiti i frame ai vari livelli  e ricostruiti i  segmenti, le cosidette microtracce, nei due strati di emulsione da una parte e l'atra della base.
+La ricostruzione delle microtraccie è divisa in due fasi: riconoscimento dei  grani appartenenti alla micro traccia  e successivo fit lineare.
+
+La ricerca di una microtraccia avviene cercando seguenze di grani allineati apparteneti a diversi strati dell'emulsione. Per ridurre il numero di possibili combinazioni di grani, il campo è diviso in celle, la cui dimensione lineare è circa $25~ \mu m$. Il primo passo nella determinazione della microtraccia è la ricerca del trigger. I livelli  di ogni buccia di emulsione sono numerati da 1 a 16. Sono definite delle sequenze di trigger. Una sequenza è formata da un livello appartente al settore superiore della strato, un livello  appartenente al settore inferiore  e qualche livello appartenente al settore centrale. Per ogni dato trigger vengono effettuate tutte le combinazioni di grani tra il livello superiore  e quello inferiore, definito nella sequenza. Per ogni combinazione vengono cercati i cluster nei livello  centrali, della sequenza di trigger entro una definita accettanza. Se almeno un grano è trovato in uno dei layer centrali, viene generato un segnale di trigger. Il numero di sequenze di trigger e il numero di livelli richiesti in tali sequenze è stato ottimizzato tramite simulazioni Monte-Carlo. 
+
+Una volta ottenuto un segnale di triggervengono cercati  i grani in tutti gli altri livelli. Mentre per la definizione del trigger  vengono usati esclusivamente grani appartenenti alla stessa cella, in questo caso anche le celle adiacenti sono prese in considerazione.  Se il numero di grani trovati supera una determinata soglia viene definita una microtraccia. Un fit lineare dei grani viene effettuato per determinare gli angoli e la posizione della microtraccia. Tale informazione viene salvata nei files di uscita.
+
+
+\section{Ricostruzione delle tracce di base}
+Il sistema di acquisizione online ricostruisce le microtracce all'interno dei due strati di emulsioni dell' ES. 
+A partire dalle microtracce vengono ricostruite le tracce di base attraverso la connessione dei grani più vicini  alla base  nelle microtracce dei due fogli i emulsioni. 
+
+Per la ricostruzione delle traccie di base, le microtracce vengono proiettate  al centro della  base e vengono cercate le coppie in base all'accordo angolare ed in posizione.
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=90mm,height=90mm]{eps/updown.eps}
+\end{center}
+\caption{Il principio della ricostruzione delle tracce di base.}
+\label{fig:tch}
+\end{figure}
+
+La traccie di base sono selezionate in base al valore del $\chi^2$ definito mediante la sequente equazione:
+
+\begin{equation}
+\chi^2 = \frac{1}{4} \left[ \frac{(\theta_{Xt} - \theta_{XB})^2}{\sigma^2_X} + \frac{(\theta_{Xb} - \theta_{XB})^2 }{\sigma^2_X} +\frac{(\theta_{Yt} - \theta_{YB})^2 }{\sigma^2_Y} + \frac{(\theta_{Yb}- \theta_{YB})^2 }{\sigma^2_Y} \right]
+\label{eq:linkud}
+\end{equation}
+
+dove $\theta_{X(Y)b(t)}$ sono  le proiezioni angolari X(Y) delle   
+microtraccie dello strato  superiore, $\theta_{X(Y)B}$ dello strato  inferiore 
+ e $\sigma_{X,Y}$ indica  la risoluzione angolare della  microtraccia. \\
+
+
+In fig. \ref{fig:tchi2} è mostrata la distribuzione $\chi^2$ nei dati. Si vede chiaramente il segnale per valori di $\chi^2<3$, mentre il fondo domina per valori più alti. 
+
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=80mm,height=80mm]{eps/chi2.eps}\includegraphics[width=80mm,height=80mm]{eps/tchi2.eps}
+
+\end{center}
+\caption{Distribuzione di $\chi^2$ nei dati (sinistra). Nel grafico a destra sono state selezionate tracce di solo segnale e solo fondo per evidenziarne i due caratteri. Il grafico a sinistra \'{e} la loro somma. }
+\label{fig:tchi2}
+\end{figure}
+
+La risoluzione angolare di microtraccia è definita in base all'accordo tra l'angolo della microtraccia e quello della traccia di base da essa formata. Questo parametro indica  l'accuratezza  angolare del microscopio e l'eventuale presenza di vibrazioni meccaniche. In fig. \ref{fig:res}
+viene mostrata la risoluzione angolare di microtraccia  per $\theta_x=0$ sia nella proezione X che Y. La risoluzione angolare degrada al variare dell'angolo, come atteso. Tale degradazione viene  parametrizzata con buona approssimazione come $\sigma(\theta)=\sigma(0)(1+4\cdot |\theta|)$.
+La dipendenza della risoluzione di microtraccia  dall'angolo è dovuta all'incertezza sulla posizione Z dei grani.  Considerando un sistema di riferimento bidimensionale XZ, e per un fissato spessore delle emulsioni $\delta Z$, se assumiamo che la coordinata Z sia  priva di errore (considerandola la variabile indipendente nella procedura di fit), l'errore indotto sulla posizione X è proporzionale alla tangente dell'angolo della microtraccia.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=120mm,height=90mm]{eps/res.eps}
+\end{center}
+\caption{Risoluzione angolare nella ricostruzione di microtracce. }
+\label{fig:res}
+\end{figure}
+
+Il numero di grani per traccia dipende dalla sensibilità delle emulsione. Per l'esperimento OPERA la sensibilità delle emulsioni e' di $33~grani/100~\mu m$. Una traccia verticale che attraversa uno strato di emulsione ha in media $42\times(33/100)=13.9$ grani. Considerando i due strati, le tracce di base devono avere in media 27.8 grani, il che è in buon accordo con il valore misurato  riportato in figura \ref{fig:pulse}.
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=90mm,height=90mm]{eps/pulse_eff.eps}
+\end{center}
+\caption{Distribuzione del numero di livelli pieni su un totale di 32 livelli acquisiti sui due strati. }
+\label{fig:pulse}
+\end{figure}
+
+\section{Ricostruzione delle tracce nelle ECC}
+
+Come mostrato in fig. \ref{fig:track} le tracce di base sono utilizzate per la ricostruzione di tracce che hanno attraversato varie celle ECC. Durante l'impacchettamento delle lastre di emulsione e piombo, i film sono in generale roto-traslati tra loro. Per poter ricostruire le traccie che attraversano diverse celle è necessario,  correggere le rototraslazioni riscontrate. Ci\'{o} viene fatto mediante algoritmi di riconoscimento di pattern su coppie di lastre consecutive, con una procedura che prende il nome di {\emph{intercalibrazione}}.
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=90mm,height=90mm]{eps/track.eps}
+\end{center}
+\caption{Disegno schematico di una ECC costituita da 5 celle.Sono mostrate due tracce (tratteggiate) e le corrispondenti tracce di base(continue). }
+\label{fig:track}
+\end{figure}
+
+
+L'intercalibrazione di due lastre consecutive  viene effettuata applicando diverse traslazioni alle tracce di base in posizione e calcolando il numero di tracce associate ad ogni spostamento. La corretta traslazione dei piatti è individuata dalla massimizzazione del  numero di associazioni. Dopo aver ricavato l'entità della traslazione, viene calcolata la trasformazione affine tra i due fogli la quale tiene conto anche delle  rotazioni e deformazione tra i fogli di emulsione. La trasformazioni affine è definita nel seguente modo:
+
+
+\begin{equation}
+\left( \begin{array}{c} x' \\ y' \\ \end{array} \right) = \left(
+\begin{array}{cc} a_{11} & a_{12} \\ a_{21} & a_{22} \\\end{array}
+\right) 
+\left( \begin{array}{c} x \\ y  \\\end{array} \right) + \left(\begin{array}{c} b_{1} \\ b_{2}  \\\end{array}
+\right) 
+\end{equation}
+
+Utilizzando circa un centinaio  di traccie passanti si riesce ad ottenere un allineamento dell'ordine del micron.
+
+
+Una volta che i piatti sono stati allineati è possibile passare alla ricostruzione delle tracce. L'algoritmo per la ricostruzione delle traccie si basa essenzialmente sullo stesso metodo utilizzato per la ricostruzione delle tracce di base. Partendo da coppie di tracce di base, si tenta di estenderle da entrambi i lati combinandole con altre tracce di base. La catena di tracce di base \'e interrotta in presenza di un decadimento o interazione oppure per inefficienze nelle determinazione delle tracce di base. Una procedura, detta di {\emph{relink}}, success ivamente prova ad unire  i  pezzi della stessa  traccia non connessi. La catene di tracce di base vengono fittate utilizzando  Kalman fit \cite{Kalman}. La risoluzione in posizione  delle tracce di base è ottenuta dai residui in posizione  delle tracce di base rispetto alle tracce fittate su diversi fogli di emulsione (fig. \ref{fig:resbase}).
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=90mm,height=90mm]{eps/btrk_pos_res.eps}
+\end{center}
+\caption{Risoluzione della traccia di base. }
+\label{fig:resbase}
+\end{figure}
+
+
+
+
+\section{ Efficienza di tracciamento.}
+
+Per la misura di efficienza sono stati utilizzati fogli di emulsione nucleari di un brick  esposto ad un fascio di pioni dell'energia di $8~GeV/c$ con  vari angoli di incidenza, in modo da avere una misura dell'efficienza al variare dell'angolo del fascio fig. \ref{fig:eff_angle}. Per  evitare effetti spuri dovuti a  deviazioni dell'angolo delle tracce tra i vari fogli dovuto alla diffusione Columbiana, il brick è stato assemblato utilizzando solo fogli di emulsioni, nonintervallate da lastre di piombo come di rigola avviene in OPERA.
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=120mm,height=80mm]{eps/eff_angle.eps}
+\end{center}
+\caption{Distribuzione angolare delle tracce }
+\label{fig:eff_angle}
+\end{figure}
+
+
+
+Si è effettuata una  scansione circa $4~cm^2$ su 8 piatti consecutivi. I dati acquisiti sono stati processati seguendo i passi descritti in precedenza: ricostruzione delle tracce di base, intercalibrazione dei piatti, ricostruzione delle tracce.
+
+
+Per il calcolo dell'efficienza si considerano tutte le tracce trovate su un certo numero di fogli di emulsione. Nel   foglio immediatamente successivo si verifica se  la traccia di base associata è presente o meno(si veda figura \ref{fig:eff}). Usando tracce trovate su 4 fogli consecutivi come campione di normalizzazione, l'efficienza è definita da
+
+\begin{equation}
+\epsilon=\frac{N5}{N4+N5}
+\end{equation}
+
+dove $N4$ e $N5$ sono il numero di tracce avente rispettivamente 4 e 5 segmenti consecutivi. Avendo effettuato la scansione di 8 fogli consecutivi è possibile realizzare 8 misure indipendenti dell'efficienza. 
+La scelta di utilizzare quintupletti su quadrupletti deriva da due fattori: in primo luogo si \'{e} osservato che gi\'{a} con i quadrupletti il livello di coincidenze casuali \'{e} trascurabile e pertanto il risultato non cambia se si utilizzano tracce a pi\'{u} segmenti. In secondo luogo, avendo a disposizione 8 lastre, l'utilizzo di quadrupletti consente di mediare su 8 combinazioni, migliorando l'accuratezza statistica della misura.
+La media sulle 8 misure è riportata in tabella \ref{tab:eff}, con il suo relativo errore, per i vari angoli di incidenza del fascio.
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=90mm,height=90mm]{eps/eff.eps}
+\end{center}
+\caption{Definizione delle tracce utilizzate per la misura di efficienza.}
+\label{fig:eff}
+\end{figure}
+
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  $\theta_x$ (rad) & $\theta_y$ (rad) & $\varepsilon$ ($\%$) \\
+  \hline
+  $0.010$ & $0.015$ & $93.7 \pm 1.4$ \\
+  $0.093$ & $0.014$ & $92.5 \pm 1.3$ \\
+  $0.211$ & $0.017$ & $89.5 \pm 1.7$ \\
+  $0.294$ & $0.012$ & $86.4 \pm 2.3$ \\
+  $0.405$ & $0.019$ & $85.2 \pm 2.3$ \\
+  $0.492$ & $0.011$ & $87.2 \pm 2.0$ \\
+  $0.017$ & $0.184$ & $88.1 \pm 2.0$ \\
+  $0.088$ & $0.184$ & $87.3 \pm 2.7$ \\
+  $0.220$ & $0.183$ & $85.7 \pm 1.4$ \\
+  $0.291$ & $0.185$ & $86.4 \pm 2.3$ \\
+  $0.423$ & $0.181$ & $87.2 \pm 1.6$ \\
+  $0.495$ & $0.187$ & $88.7 \pm 2.0$ \\
+ \hline
+\end{tabular}
+\caption{Misura di efficienza di tracciamento con lastre esposte al fasci di pioni di $8GeV$ al CERN.}
+\label{tab:eff}
+\end{center}
+\end{table}
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=90mm,height=90mm]{eps/efficiency.eps}
+\end{center}
+\caption{Misura dell'efficienza in funzione dell'angolo della traccia.}
+\label{fig:effangle}
+\end{figure}
+
+

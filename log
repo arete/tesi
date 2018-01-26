@@ -1,0 +1,146 @@
+This is TeX, Version 3.14159 (Web2C 7.4.5)
+(./tesi.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, italian, nohyphena
+tion, loaded.
+(/usr/share/texmf/tex/latex/base/book.cls
+Document Class: book 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/bk12.clo))
+(/usr/share/texmf/tex/generic/babel/babel.sty
+(/usr/share/texmf/tex/generic/babel/italian.ldf
+(/usr/share/texmf/tex/generic/babel/babel.def)))
+(/usr/share/texmf/tex/latex/base/inputenc.sty
+(/usr/share/texmf/tex/latex/base/latin1.def))
+(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+(/usr/share/texmf/tex/latex/base/t1enc.def))
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+(/usr/share/texmf/tex/latex/graphics/trig.sty)
+(/usr/share/texmf/tex/latex/config/graphics.cfg)
+(/usr/share/texmf/tex/latex/graphics/dvips.def))
+(/usr/share/texmf/tex/latex/graphics/epsfig.sty
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf/tex/latex/graphics/keyval.sty))) (./arete.sty
+(/usr/share/texmf/tex/latex/base/ifthen.sty)
+(/usr/share/texmf/tex/latex/base/latexsym.sty)
+Arete Documentation package version 0.1
+prova
+(/usr/share/texmf/tex/generic/misc/epsf.tex
+This is `epsf.tex' v2.7k <10 July 1997>
+)) (./tesi.aux (./intro.aux) (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux
+) (./conclusioni.aux) (./ringraziamenti.aux) (./biblio.aux))
+(/usr/share/texmf/tex/latex/cyrillic/ot2cmr.fd)
+(/usr/share/texmf/tex/latex/base/t1cmss.fd) [0] [0] (./tesi.toc
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texmf/tex/latex/base/ulasy.fd) [1]) [2] (./intro.tex [1]) [2]
+(./cap1.tex
+Capitolo 1.
+
+Underfull \vbox (badness 2856) has occurred while \output is active [3]
+[4] [5] (/usr/share/texmf/tex/latex/base/omscmr.fd) [6] [7] <eps/osc.eps>
+<eps/osc1.eps>
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 319.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 320.
+
+[8] [9] <eps/3nuspic.eps> [10] <eps/ciclopp.ps> [11] [12] <eps/LMA-I-II.eps>
+[13] [14] <eps/SK.eps> <eps/SK_K2K.eps> <eps/SK_K2K_proj_dm2.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15] [16] <eps/summary.eps>) [17] [18] [19] [20] (./cap2.tex
+Capitolo 2.
+[21] <./figure_cap2/figura2_1.eps> [22]
+Overfull \hbox (79.02153pt too wide) has occurred while \output is active
+[]\T1/cmr/bx/n/12 2.1.  Esperimenti con acceleratori nel dominio di massa indic
+ato dai neutrini atmosferici \T1/cmr/m/n/12 23
+[23] <./figure_cap2/figura2_2.eps> <./figure_cap2/figura2_3.sh> [24] [25]
+<./figure_cap2/figura2_5.eps> [26] <./figure_cap2/decadim_tau_CNGS.eps>
+Underfull \hbox (badness 4967) in paragraph at lines 266--266
+[]\T1/cmr/m/n/12 Figura 2.5: Di-stri-bu-zio-ne del-le lun-ghez-ze di de-ca-di-m
+en-to del $\OML/cmm/m/it/12 ^^\$ \T1/cmr/m/n/12 pre-vi-sta
+
+Underfull \vbox (badness 2894) has occurred while \output is active [27]
+<./figure_cap2/figura2_4.eps>
+Underfull \vbox (badness 4913) has occurred while \output is active [28]
+<./figure_cap2/figura2_6.eps> [29]
+Underfull \vbox (badness 2111) has occurred while \output is active [30]
+<./figure_cap2/figura2_7.eps> [31] <./figure_cap2/brick.eps>
+Underfull \vbox (badness 2073) has occurred while \output is active [32]
+<./figure_cap2/figura2_8.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active [33]
+[34]
+Overfull \hbox (48.899pt too wide) in paragraph at lines 586--607
+ [] 
+[35] [36] [37] [38] <./figure_cap2/sensitivitaOPERA.eps>
+Overfull \hbox (1.98514pt too wide) in paragraph at lines 843--859
+ [][] 
+) [39] [40] [41] (./cap3.tex [42]
+Capitolo 3.
+[43]
+Underfull \vbox (badness 10000) has occurred while \output is active [44]
+<./figure_cap2/TrackSelector.eps>
+Overfull \hbox (14.21033pt too wide) in paragraph at lines 98--113
+[][] 
+[45] <./figure_cap2/S-UTS.eps>
+Underfull \vbox (badness 1389) has occurred while \output is active [46]
+<./eps/mic2.eps> <./eps/schmic.eps> [47] [48]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 177.
+
+<./eps/Sett_timeX.eps> <./eps/Sett_timeY.eps> [49]
+<eps/Y_clust_pos_10_tracks.eps> [50] <./eps/illu.eps> [51] <eps/Zslant.eps>
+[52] [53] <eps/updown.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 298--301
+
+<eps/chi2.eps> <eps/tchi2.eps>
+Overfull \hbox (16.7289pt too wide) in paragraph at lines 308--309
+ [][] 
+[54] [55] <eps/res.eps> <eps/pulse_eff.eps> [56] <eps/track.eps> [57]
+<eps/btrk_pos_res.eps> <eps/eff_angle.eps> [58] [59] <eps/eff.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<eps/efficiency.eps>) [60] [61] (./cap4.tex [62]
+Capitolo 4.
+
+Underfull \vbox (badness 10000) has occurred while \output is active [63]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 52.
+
+<eps/testbeam.eps> <eps/shower.eps> [64] <eps/cs_tx_ty.eps> [65]
+<eps/vtx09campione.eps> <eps/pred_ty_tx.eps> <eps/pre_x_y.eps>
+Overfull \hbox (16.7289pt too wide) in paragraph at lines 144--145
+ [][] 
+[66] [67] <eps/view3x3x.eps> <eps/view3x3y.eps> <eps/profx.eps>
+<eps/dycorr.eps> [68] [69] <eps/predchi2.eps> <eps/sigma_dx.eps>
+<eps/sigma_dtx.eps> [70]
+Underfull \vbox (badness 10000) has occurred while \output is active [71]
+<eps/plpred.eps> [72] <eps/stop.eps>
+Underfull \vbox (badness 1460) has occurred while \output is active [73]
+<eps/cap4/impatto.eps> <eps/cap4/impatto_theta.eps> <eps/cap4/parente.eps>
+Underfull \vbox (badness 3281) has occurred while \output is active [74]
+[75] <eps/cap4/good.eps>) [76] (./conclusioni.tex
+Underfull \vbox (badness 2980) has occurred while \output is active [77])
+[78] (./ringraziamenti.tex) [79] (./biblio.tex [80] [81] [82]
+Underfull \hbox (badness 2990) in paragraph at lines 88--89
+[]\T1/cmr/m/n/12 OPERA Eu-ro-pean Scan-ning Sy-stem Col-la-bo-ra-tion, \T1/cmr/
+m/it/12 High-speed au-to-ma-tic
+) [83] (./tesi.aux (./intro.aux) (./cap1.aux) (./cap2.aux) (./cap3.aux)
+(./cap4.aux) (./conclusioni.aux) (./ringraziamenti.aux) (./biblio.aux)) )
+(see the transcript file for additional information)
+Output written on tesi.dvi (87 pages, 205944 bytes).
+Transcript written on tesi.log.
